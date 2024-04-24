@@ -1,4 +1,4 @@
-
-function scrollWin(x, y) {
-    window.scrollBy(x, y);
-}
+function myFunction() {
+    const element = document.getElementById("dem");
+    element.scrollIntoView();
+  }
