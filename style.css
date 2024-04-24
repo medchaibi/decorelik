@@ -6,6 +6,11 @@
     font-optical-sizing: auto;
 }
 
+:root {
+    --swiper-navigation-color: goldenrod;
+    --swiper-pagination-color: goldenrod;
+}
+
 body {
 
     min-height: 100vh;
@@ -92,7 +97,7 @@ hr {
 .img-pic-title {
     width: 30%;
     height: 100%;
-    background-image: url(https://i.pinimg.com/564x/e5/a0/2d/e5a02d78e6a33a187cc915f67b407c8c.jpg);
+    background-image: url(https://i.pinimg.com/736x/db/97/c6/db97c6db12c24577d247c8c24bdb4760.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0px 40px 0px 0px;
@@ -966,41 +971,50 @@ swiper-slide {
         align-items: center;
         text-align: center;
     }
-    .col-md-3{
+
+    .col-md-3 {
         display: flex;
         justify-content: center;
         margin-top: 0.5rem;
     }
-    .use-links{
+
+    .use-links {
         text-align: center;
     }
 
-    .social-icons{
+    .social-icons {
         display: flex;
         gap: 0.5rem;
     }
-    li{
+
+    li {
         height: 25px;
         text-align: center;
     }
-    .address{
+
+    .address {
         margin-top: 10px;
     }
-    h2{
+
+    h2 {
         text-align: center;
     }
-    .mySwiper{
+
+    .mySwiper {
         width: 100%;
         height: 400px;
         gap: 0.5rem;
     }
-    .swiper-wrapper{
+
+    .swiper-wrapper {
         gap: 0px;
     }
-    .best-d{
+
+    .best-d {
         height: 1300px;
     }
-    .pic-in{
+
+    .pic-in {
         width: 20px;
         padding: 2px;
         font-size: 10px;
