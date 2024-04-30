@@ -74,7 +74,7 @@ hr {
 }
 
 .home {
-    height: 433px;
+    height: 523px;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -83,23 +83,24 @@ hr {
 }
 
 .left {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin-right: 2rem;
+    margin-right: 4rem;
     gap: 1.5rem;
     text-align: right;
 }
 
 .img-pic-title {
-    width: 30%;
-    height: 100%;
+    width: 880px;
+    height: 500px;
     background-image: url(https://i.pinimg.com/736x/db/97/c6/db97c6db12c24577d247c8c24bdb4760.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: initial;
     border-radius: 0px 40px 0px 0px;
 }
 
@@ -109,13 +110,16 @@ hr {
 }
 
 .sub-title {
+    width: 80%;
+    font-size: 16px;
     color: gray;
 }
 
 .btns {
+
     display: flex;
     flex-direction: row-reverse;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .contact {
@@ -128,6 +132,8 @@ hr {
     transition: 0.3s;
     background-color: goldenrod;
     color: #fff;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
 }
 
 .contact:hover {
@@ -142,6 +148,7 @@ hr {
     border-style: none;
     background-color: transparent;
     cursor: pointer;
+
 }
 
 .see-pics:hover {
@@ -171,11 +178,11 @@ hr {
 }
 
 .etaps {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: row-reverse;
-    gap: 1rem;
-    justify-content: space-around;
+    gap: 0.5rem;
+    /* justify-content: space-around; */
     align-items: center;
     text-align: center;
 }
@@ -225,19 +232,21 @@ hr {
 
 .down {
     margin-top: 2rem;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row-reverse;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 .part-why-element {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     text-align: right;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .sub-title-tree,
@@ -256,14 +265,15 @@ hr {
     background-color: #e2e1e1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    height: 500px;
+    height: 400px;
 }
 
 .img-two {
-    width: 40%;
-    height: 80%;
+    width: 30%;
+    height: 70%;
 }
 
 .five {
@@ -276,12 +286,13 @@ hr {
 }
 
 .part-review {
+    width: 100%;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-flow: wrap;
-    margin: 0;
+    gap: 1rem;
     height: 100%;
 }
 
@@ -713,10 +724,10 @@ swiper-slide {
 }
 
 .btn-send {
-    margin-top: 2rem;
-    width: 52%;
+    /* margin-top: 2rem; */
+    width: 38%;
     align-self: center;
-    height: 4rem;
+    height: 54px;
     font-size: 25px;
     font-weight: bold;
     border-style: none;
@@ -725,6 +736,9 @@ swiper-slide {
     transition: 0.3s;
     background-color: goldenrod;
     color: #fff;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+    border-radius: 10px;
 
 }
 
@@ -773,10 +787,204 @@ swiper-slide {
     right: 0px;
 }
 
+
+
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 3.3em 0.7em 1.7em;
+    font-size: 15px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+    /* position: absolute; */
+}
+
+.button2>svg {
+    height: 26px;
+    position: absolute;
+    padding: 0px 5px;
+    margin-top: -4px;
+}
+
+.button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button2:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+}
+
+.button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button3 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 3.3em 0.7em 1.7em;
+    font-size: 17px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+    position: absolute;
+    bottom: 149px;
+    left: 48rem;
+}
+
+.button3>svg {
+    height: 30px;
+    position: absolute;
+    padding: 0px 5px;
+    margin-top: -4px;
+}
+
+.button3:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+.button3:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button3:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button3:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+}
+
+.button3:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button3:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.btns-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+    height: 60px;
+}
+
+.demende {
+    position: relative;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+
+
+
 @media screen and (max-width: 650px) {
     .nav-bar {
         height: 20px;
     }
+
 
     .logo {
         width: 35px;
@@ -787,20 +995,57 @@ swiper-slide {
         font-size: 10px;
     }
 
+    .home {
+        height: 350PX;
+    }
+
     .left {
-        width: 40%;
+
+        width: 46%;
         gap: 5px;
+        margin-right: 1rem;
 
     }
 
     .title {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .btns {
+        height: 40%;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
+
     }
+
+
+    .button2 {
+        position: relative;
+        /* width: 50%; */
+        font-size: 12px;
+        
+    }
+
+
+
+
+
+    .contact,
+    .see-pics {
+
+        width: 70%;
+        height: 50px;
+    }
+
+    .see-pics {
+        font-size: 9px;
+    }
+
+
 
     .up-title {
         font-size: 8px;
@@ -812,7 +1057,12 @@ swiper-slide {
 
     .img-pic-title {
         width: 45%;
-        height: 90%;
+        height: 98%;
+        background-image: url("https://i.pinimg.com/564x/b9/5e/d7/b95ed708c1974938723bf86f7208a576.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 0px 20px 20px 0px; */
     }
 
     .title-two {
@@ -825,11 +1075,16 @@ swiper-slide {
     }
 
     .etaps {
-        gap: 0.5rem;
+        width: 100%;
+        padding: 0px;
     }
 
     .local {
-        width: 80%;
+        width: 100%;
+    }
+
+    .imgs {
+        width: 70%;
     }
 
     .cader {
@@ -847,12 +1102,15 @@ swiper-slide {
     }
 
     .how-work {
+        width: 100%;
         padding: 0.5rem;
+        gap: 2px;
     }
 
     .why-us {
         padding: 0.5rem;
-        height: 500px;
+        height: 400px;
+        gap: 1PX;
     }
 
     .img-why {
@@ -888,14 +1146,25 @@ swiper-slide {
     .down {
         margin-top: 0rem;
         gap: 0.1rem;
+        padding: 0;
     }
 
     .img-part {
         width: 50%;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
+
+    .part-why-element {
+        gap: 1PX;
+    }
+
+    .element-right {
+        width: 90ù;
+        gap: 1PX;
+    }
+
 
     .ic-on {
         width: 20px;
@@ -906,8 +1175,9 @@ swiper-slide {
     }
 
     .four {
-        height: 250px;
-
+        height: 170px;
+        width: 100%;
+        gap: 10px;
     }
 
     .title-five {
@@ -941,8 +1211,10 @@ swiper-slide {
 
     .btn-send {
         margin-top: 10px;
+        margin-right: 14px;
         height: 2rem;
         font-size: 10px;
+        
     }
 
     .place-title {
@@ -1018,5 +1290,25 @@ swiper-slide {
         width: 20px;
         padding: 2px;
         font-size: 10px;
+    }
+
+    .button3 {
+        bottom: 31px;
+        left: 160px;
+        font-size: 9px;
+        display: var(--swiper-navigation-color);
+        
+
+    }
+
+    .button3>svg {
+        height: 20px;
+    }
+
+    .part-review{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
