@@ -457,8 +457,10 @@ html {
 
 .social-icons {
     display: flex;
+    gap: 5px;
     flex-direction: column;
     color: #777777;
+    width: 100%;
 }
 
 .social-icons a {
@@ -803,7 +805,7 @@ swiper-slide {
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5,
         -6px -6px 12px #ffffff;
-    /* position: absolute; */
+    
 }
 
 .button2>svg {
@@ -874,15 +876,12 @@ swiper-slide {
     z-index: 1;
     color: #090909;
     padding: 0.7em 3.3em 0.7em 1.7em;
-    font-size: 17px;
+    font-size: 15px;
     border-radius: 0.5em;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5,
         -6px -6px 12px #ffffff;
-    position: absolute;
-    bottom: 149px;
-    left: 48rem;
 }
 
 .button3>svg {
@@ -954,9 +953,6 @@ swiper-slide {
     height: 60px;
 }
 
-.demende {
-    position: relative;
-}
 
 .float {
     position: fixed;
@@ -1210,10 +1206,10 @@ swiper-slide {
     }
 
     .btn-send {
-        margin-top: 10px;
-        margin-right: 14px;
-        height: 2rem;
-        font-size: 10px;
+        /* margin-top: px; */
+        /* margin-right: 14px; */
+        height: 30px;
+        font-size: 9px;
         
     }
 
@@ -1221,6 +1217,7 @@ swiper-slide {
         top: 5px;
         left: 100px;
         height: 40px;
+
     }
 
     .title-damende {
@@ -1231,10 +1228,10 @@ swiper-slide {
         padding: 0.5rem;
         padding-top: 1rem;
     }
-
+/* 
     .img-fluid {
         width: 80px;
-    }
+    } */
 
     .useful-link h2 {
         padding-bottom: 1px;
@@ -1254,22 +1251,22 @@ swiper-slide {
         text-align: center;
     }
 
-    .social-icons {
-        display: flex;
-        gap: 0.5rem;
-    }
 
     li {
-        height: 25px;
+        height: 35px;
+        font-size: 22px;
         text-align: center;
     }
 
     .address {
-        margin-top: 10px;
+        margin-top: 25px;
+        height: 160px;
     }
 
     h2 {
+        margin-top: 15px;
         text-align: center;
+        height: 1px;
     }
 
     .mySwiper {
@@ -1293,11 +1290,8 @@ swiper-slide {
     }
 
     .button3 {
-        bottom: 31px;
-        left: 160px;
         font-size: 9px;
         display: var(--swiper-navigation-color);
-        
 
     }
 
@@ -1311,4 +1305,9 @@ swiper-slide {
         align-items: center;
         justify-content: center;
     }
+    .logo-footer{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
 }
