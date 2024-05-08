@@ -1298,9 +1298,10 @@ swiper-slide {
     }
 
     .best-d {
-        height: 1700px;
+        height: 1900px;
         width: 100%;
-
+        gap: 10px;
+        padding: 20px;
     }
 
     .pic-in {
